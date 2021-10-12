@@ -46,4 +46,9 @@
 #define HC02_CHAR_RX_UUID "49535343-8841-43F4-A8D4-ECBE34729BB3"
 #define HC02_ADV_UUID "18F0"
 
+// Power Cruise Control OBD2 dongle
+#define PCC_SERVICE_UUID                       "FFF0"
+#define PCC_CHAR_TX_UUID                       "FFF1"
+#define PCC_CHAR_RX_UUID                       "FFF2"
+
 #define RBL_BLE_FRAMEWORK_VER                    0x0200

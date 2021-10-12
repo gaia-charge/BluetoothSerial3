@@ -21,7 +21,7 @@ TODO Fritzing diagram here
 
 ### Upload the sketch
 
-Upload the [sketch](https://github.com/don/BluetoothSerial/blob/master/examples/LED/Arduino/PhoneGapLED/PhoneGapLED.ino) to your Uno using the Arduino IDE.
+Upload the [sketch](https://github.com/gaia-green-tech/BluetoothSerial3/blob/master/examples/LED/Arduino/PhoneGapLED/PhoneGapLED.ino) to your Uno using the Arduino IDE.
 
 ### Pair your phone
 
@@ -37,7 +37,7 @@ Adding platforms generates the native project
     
 Install the Bluetooth Serial plugin with cordova
 
-    $ cordova plugin add cordova-plugin-bluetooth-serial
+    $ cordova plugin add cordova-plugin-bluetooth-serial3
 
 Connect your phone to the computer.
 
@@ -53,9 +53,9 @@ Move the sliders to adjust Red, Green, and Blue values.
 
 This code also works with iOS as long as you use a RedBearLabs BLE radio or the Adafruit Bluefruit LE
 
-For the RedBear radios upload the [PhoneGapLED.ino sketch](https://github.com/don/BluetoothSerial/blob/master/examples/LED/Arduino/PhoneGapLED/PhoneGapLED.ino) to your Uno using the Arduino IDE.
+For the RedBear radios upload the [PhoneGapLED.ino sketch](https://github.com/gaia-green-tech/BluetoothSerial3/blob/master/examples/LED/Arduino/PhoneGapLED/PhoneGapLED.ino) to your Uno using the Arduino IDE.
 
-For the Adafruit Bluetfruit LE radio upload the [PhoneGapLED_BluefruitLE.ino sketch](https://github.com/don/BluetoothSerial/blob/master/examples/LED/Arduino/PhoneGapLED_BluefruitLE/PhoneGapLED_BluefruitLE.ino) to your Uno using the Arduino IDE.
+For the Adafruit Bluetfruit LE radio upload the [PhoneGapLED_BluefruitLE.ino sketch](https://github.com/gaia-green-tech/BluetoothSerial3/blob/master/examples/LED/Arduino/PhoneGapLED_BluefruitLE/PhoneGapLED_BluefruitLE.ino) to your Uno using the Arduino IDE.
 
 Adding platforms generates the native project
 
@@ -63,7 +63,7 @@ Adding platforms generates the native project
     
 Install the Bluetooth Serial plugin with cordova
 
-    $ cordova plugin add cordova-plugin-bluetooth-serial
+    $ cordova plugin add cordova-plugin-bluetooth-serial3
     $ cordova prepare
     $ open platforms/ios/LED.xcodeproj
     

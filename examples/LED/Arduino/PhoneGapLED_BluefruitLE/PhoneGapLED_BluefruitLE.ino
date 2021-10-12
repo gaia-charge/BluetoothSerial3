@@ -1,8 +1,8 @@
 // Bluetooth Serial LED Example for Bluefruit LE
 // (c) 2014 Don Coleman
 // 
-// BluetoothSerial https://github.com/don/BluetoothSerial
-// LED Example https://github.com/don/BluetoothSerial/tree/master/examples/LED
+// BluetoothSerial https://github.com/gaia-green-tech/BluetoothSerial3
+// LED Example https://github.com/gaia-green-tech/BluetoothSerial3/tree/master/examples/LED
 // Bluefruit LE http://adafru.it/1697
 // Bluefruit LE Driver https://github.com/adafruit/Adafruit_nRF8001
 

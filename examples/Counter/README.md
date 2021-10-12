@@ -4,7 +4,7 @@ Simple Bluetooth Example. Arduino increments a counter and sends the value over 
 
 Some assembly required.
 
-I'll assume you've cloned https://github.com/don/BluetoothSerial into ~/BluetoothSerial
+I'll assume you've cloned https://github.com/gaia-green-tech/BluetoothSerial3 into ~/BluetoothSerial
 
 Copy the chat example to a new directory.  
 
@@ -22,7 +22,7 @@ Hardware
 
 ### Upload the sketch
 
-Upload the [sketch](https://github.com/don/BluetoothSerial/blob/master/examples/Counter/Arduino/Counter/Counter.ino) to your Uno using the Arduino IDE.
+Upload the [sketch](https://github.com/gaia-green-tech/BluetoothSerial3/blob/master/examples/Counter/Arduino/Counter/Counter.ino) to your Uno using the Arduino IDE.
 
 ### Pair your phone
 
@@ -40,12 +40,12 @@ This assumes you have the [Android SDK](http://developer.android.com/sdk/index.h
 
 ### Edit Mac Address of Bluetooth Radio
 
-Edit [assets/www/js/index.js](http://github.com/don/BluetoothSerial/examples/LED/assets/www/js/index.js) and change the Mac Address to match the address of **your** Bluetooth modem.
+Edit [assets/www/js/index.js](http://github.com/gaia-green-tech/BluetoothSerial3/examples/LED/assets/www/js/index.js) and change the Mac Address to match the address of **your** Bluetooth modem.
 
 ### Install Platform and Plugin
 
     $ cordova platform add android
-    $ cordova plugin add cordova-plugin-bluetooth-serial
+    $ cordova plugin add cordova-plugin-bluetooth-serial3
 
 ### Build and Deploy
 

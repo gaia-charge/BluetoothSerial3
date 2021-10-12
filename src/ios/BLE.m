@@ -32,6 +32,7 @@ CBUUID *blueGigaServiceUUID;
 CBUUID *hm10ServiceUUID;
 CBUUID *hc02ServiceUUID;
 CBUUID *hc02AdvUUID;
+CBUUID *pccServiceUUID;
 CBUUID *serialServiceUUID;
 CBUUID *readCharacteristicUUID;
 CBUUID *writeCharacteristicUUID;
@@ -218,8 +219,9 @@ CBUUID *writeCharacteristicUUID;
     hm10ServiceUUID = [CBUUID UUIDWithString:@HM10_SERVICE_UUID];
     hc02ServiceUUID = [CBUUID UUIDWithString:@HC02_SERVICE_UUID];
     hc02AdvUUID = [CBUUID UUIDWithString:@HC02_ADV_UUID];
+    pccServiceUUID = [CBUUID UUIDWithString:@PCC_SERVICE_UUID];
     NSArray *services = @[redBearLabsServiceUUID, adafruitServiceUUID, lairdServiceUUID, blueGigaServiceUUID, hm10ServiceUUID, 
-                        hc02AdvUUID];
+                        hc02AdvUUID, pccServiceUUID];
     [self.CM scanForPeripheralsWithServices:services options: nil];
 #else
     [self.CM scanForPeripheralsWithServices:nil options:nil]; // Start scanning
@@ -565,9 +567,16 @@ static bool done = false;
             } else if ([service.UUID isEqual:hc02ServiceUUID]) {
                 NSLog(@"HC-02 Bluetooth");
                 NSLog(@"Set HC-02 read write UUID");
-                serialServiceUUID = hc02ServiceUUID;
+                serialServiceUUID = ;
                 readCharacteristicUUID = [CBUUID UUIDWithString:@HC02_CHAR_TX_UUID];
                 writeCharacteristicUUID = [CBUUID UUIDWithString:@HC02_CHAR_RX_UUID];
+                break;
+            } else if ([service.UUID isEqual:pccServiceUUID]) {
+                NSLog(@"Power Cruise Control Bluetooth");
+                NSLog(@"Set PCC read write UUID");
+                serialServiceUUID = pccServiceUUID;
+                readCharacteristicUUID = [CBUUID UUIDWithString:@PCC_CHAR_TX_UUID];
+                writeCharacteristicUUID = [CBUUID UUIDWithString:@PCC_CHAR_RX_UUID];
                 break;
             } else {
                 // ignore unknown services
